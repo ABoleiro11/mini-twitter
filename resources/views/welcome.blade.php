@@ -8,7 +8,26 @@
     @vite('resources/css/app.scss')
 </head>
 <body>
-    <p>Hallo Welt</p>
+@extends('layouts.app')
+
+@section('content')
+<div class="container">
+    <header>
+        <h1>Mini Twitter</h1>
+        <div class="my-tweets">
+            <p>Meine Tweets</p>
+        </div>
+        <div class="post-button">
+            <a href="#" class="btn btn-primary">Tweet</a>
+        </div>
+    </header>
+
+    <div class="message-box">
+        <!-- Hier werden die Nachrichten angezeigt -->
+        <!-- Blade-Direktiven, um Nachrichten aus der Datenbank anzuzeigen -->
+    </div>
+</div>
+@endsection
     
     
 </body>

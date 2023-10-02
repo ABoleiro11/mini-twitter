@@ -1,7 +1,41 @@
-body{
-    background-color: yellow;
+@import 'variables'; // Hier können Sie SCSS-Variablen definieren
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    h1 {
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .my-tweets {
+        font-size: 18px;
+    }
+
+    .post-button {
+        a {
+            background-color: #1D9BF0;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
 }
 
-.test {
-    font-size: 200px;
+.message-box {
+    /* Stil für die Nachrichtenliste */
+    width: 768px;
+    height: 199px;
+    top: 283px;
+    left: 372px;
+    border-radius: 8px;
+    border: 1px;
+
 }
+
+
+
